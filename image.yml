@@ -11,6 +11,9 @@ upstream:
     type: json
     url: https://api.github.com/repos/znc/znc/tags
     jq: first(.[] | select(.name | contains("-rc") | not)) | .name
+  sponsor:
+  - name: PayPal donation
+    url: https://www.paypal.com/donate?hosted_button_id=X64ZH85FWE8SJ
 
 release:
   branch: master
